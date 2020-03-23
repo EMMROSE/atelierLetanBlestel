@@ -4,4 +4,18 @@
 @import "banner";
 @import "button";
 @import "card";
+@import "footer";
 @import "navbar";
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#foot_position {
+  position: absolute;
+  right: 0;
+  bottom: -12vh;
+  left: 0;
+}

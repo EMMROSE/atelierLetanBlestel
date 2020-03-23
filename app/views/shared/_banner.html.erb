@@ -1,5 +1,17 @@
 <div class="banner">
   <div class="container">
+    <div class="search-form-control form-group mb-0">
+      <%= text_field_tag :query,
+          params[:query],
+          style: "text-align: right",
+          class: "search-input form-control string required banner-typed-text",
+          id: "search_query",
+          value: ""
+      %>
+      <%= button_tag(type: "submit", class: "btn btn-flat") do %>
+        <i class="fas fa-search"></i> Search
+      <% end %>
+    </div>
     <a class="btn btn-2" href="#">Nous contacter</a>
   </div>
 </div>
