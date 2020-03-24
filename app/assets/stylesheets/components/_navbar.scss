@@ -3,6 +3,10 @@
   background: white;
 }
 
+.navbar-shadow {
+  box-shadow: 0px 0px 5px rgb(200, 200, 200);
+}
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -10,3 +14,44 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.navbar {
+  .search {
+  flex-grow: 1;
+  }
+  .search-input {
+  width: 50%;
+  display: inline-block;
+  }
+  .navbar-btn {
+    border: 1px solid black;
+    color: black;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+  }
+  .white-btn {
+    color: white;
+    border-color: white;
+  }
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+
+.navbar-points {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid $dark-red;
+  color: $dark-red;
+}
+
+.fa-search {
+  color: white!important;
+}
+
+
