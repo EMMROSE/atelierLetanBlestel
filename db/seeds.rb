@@ -23,17 +23,17 @@ puts '----------------'
 
 puts 'Create Works'
 @work1 = Work.new(title: 'verrière pour cuisine', category:'verrière')
-file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/verriere.jpg')
 @work1.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
 @work1.save!
 
 @work2 = Work.new(title: 'Charpente de ferme', category:'charpente')
-file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/charpente.jpg')
 @work2.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
 @work2.save!
 
 @work3 = Work.new(title: 'Vitrine de restaurant', category:'vitrine')
-file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/vitrine.jpg')
 @work3.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
 @work3.save!
 puts '>>>>>> Done!'
