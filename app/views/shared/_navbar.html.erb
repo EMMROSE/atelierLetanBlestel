@@ -1,4 +1,4 @@
-<div id="js-scroll-navbar" class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top bg-transparent">
+<div id="js-scroll-navbar" class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <div id="js-navbar-brand" class="navbar-brand flex-grow-1">
     <%= link_to root_path do %>
       <%= image_tag "/assets/images/logo.png" %>
@@ -17,7 +17,7 @@
             params[:query],
             class: "search-input form-control string required",
             id: "search_query",
-            placeholder: "Find a comics",
+            placeholder: "Rechercher parmi nos réalisations",
             value: ""
         %>
         <%= button_tag(type: "submit", class: "btn btn-flat") do %>
@@ -25,5 +25,15 @@
         <% end %>
       </div>
     <% end %>
+  </div>
+  <div>
+    <ul class="navbar-nav mr-auto">
+      <li class="navbar-btn">
+        <%= link_to "Atelier", about_path, class: "nav-link" %>
+      </li>
+      <li class="navbar-btn">
+        <%= link_to "Contact", contact_path, class: "nav-link" %>
+      </li>
+    </ul>
   </div>
 </div>
