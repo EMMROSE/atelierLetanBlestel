@@ -20,15 +20,9 @@ puts '>>>>>> Done!'
 puts '----------------'
 
 puts 'Create Works'
-@work1 = Work.new(title: 'verrière pour cuisine', category:'123456')
+@work1 = Work.new(title: 'verrière pour cuisine', category:'verrière')
+@work1.cover.attach(io: File.open('../app/assets/images'), filename: 'verriere.jpg', content_type: 'image/jpg')
 @work1.save!
 puts '>>>>>> Done!'
 puts "#{Work.count} Works created!"
 puts '----------------'
-
-
-
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "description"
-    t.string "preview"
