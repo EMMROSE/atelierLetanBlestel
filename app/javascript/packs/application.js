@@ -23,6 +23,7 @@ require("channels")
 // ----------------------------------------------------
 import "bootstrap";
 import { loadDynamicBannerText } from '../components/banner';
+import { scrolledNav } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
