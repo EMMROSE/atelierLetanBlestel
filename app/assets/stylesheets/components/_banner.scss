@@ -1,99 +1,9 @@
-//base styles
-
-* {
-  //box-sizing: inherit;
-  transition-property: all;
-  transition-duration: .6s;
-  transition-timing-function: ease;
-}
-
 .banner {
   position: relative;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../assets/banner.jpeg");
-  .btn {
-  position: absolute;
-    left: 240px;
-    top: 160px;
-  color: #fff;
-  cursor: pointer;
-  // display: block;
-  font-size:16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 0 2em;
-  max-width: 160px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-
-//   @media(min-width: 400px) {
-//     display: inline-block;
-//     margin-right: 2.5em;
-
-//     &:nth-of-type(even) {
-//       margin-right: 0;
-//     }
-//   }
-
-  @media(min-width: 600px) {
-
-  margin: 0 1em 2em;
-
-//     &:nth-of-type(even) {
-//       margin-right: 2.5em;
-//     }
-
-//     &:nth-of-type(5) {
-//       margin-right: 0;
-//     }
-
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-
-}
-
-.btn-2 {
-    letter-spacing: 0;
-}
-
-.btn-2:hover,
-.btn-2:active {
-  letter-spacing: 5px;
-}
-
-.btn-2:after,
-.btn-2:before {
-  backface-visibility: hidden;
-  border: 1px solid rgba(#fff, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.btn-2:hover:after,
-.btn-2:hover:before {
-  backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.btn-2:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
-}
 }
 
 .banner h1 {
@@ -109,4 +19,25 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.banner .search input {
+  width: 50%;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.banner-typed-text:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.banner .search button {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  color: white;
+  i {
+    color: white;
+  }
 }
