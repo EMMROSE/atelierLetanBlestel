@@ -13,9 +13,11 @@
   </head>
 
   <body id="page-container">
+    <% if params[:action] != 'home'  %>
+      <%= render 'shared/navbar'%>
+    <% end %>
     <%= render 'shared/footer' %>
     <%= render 'shared/flashes' %>
-    <%= render 'shared/navbar' %>
 
     <%= yield %>
   </body>
