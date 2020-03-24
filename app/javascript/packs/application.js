@@ -23,12 +23,13 @@ require("channels")
 // ----------------------------------------------------
 import "bootstrap";
 import { loadDynamicBannerText } from '../components/banner';
+import { scrolledNav } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
   //initFlatPickr();
-  //scrolledNav(); // scroll effect of the navbar on Home Page
+  scrolledNav(); // scroll effect of the navbar on Home Page
   //stopCarousel(); // stop boostrap carousel (for preview) to autoplay
   //initMapbox();
 

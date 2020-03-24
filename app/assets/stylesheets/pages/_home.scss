@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#foot_position {
+  position: absolute;
+  right: 0;
+  bottom: -12vh;
+  left: 0;
+}
