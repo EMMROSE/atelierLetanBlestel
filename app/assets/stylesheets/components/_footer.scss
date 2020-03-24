@@ -6,11 +6,6 @@
   height: 100px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-  p {
-    text-align: center;
-    color: white;
-    font-weight: normal;
-  }
 }
 .footer-links {
   display: flex;
@@ -28,4 +23,12 @@
 }
 .footer .fa-heart {
   color: #D23333;
+}
+.footer-address {
+  flex-grow: 1;
+  p {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+  }
 }
