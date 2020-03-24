@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
-.button {
-  background: $blue;
-  color: white;
-  font-weight: bold;
-}
-
 .btn-flat {
   color: white;
   padding: 7px 24px;
@@ -18,4 +12,24 @@
 .btn-flat:hover {
   background: $dark-blue;
   color: white;
+}
+
+.btn-add-sesh {
+  font-weight: 600;
+  font-size: 24px;
+  margin-right: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all .1s ease-out;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  background: none;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $white;
+  }
 }

@@ -24,8 +24,9 @@
   display: inline-block;
   }
   .navbar-btn {
+    background-color: $blue;
     border: 1px solid black;
-    color: black;
+    color: white;
     padding: 5px 10px;
     margin-right: 5px;
     border-radius: 5px;
@@ -40,14 +41,6 @@
 
 .flex-grow-1 {
   flex-grow: 1;
-}
-
-
-.navbar-points {
-  padding-right: 10px;
-  margin-right: 10px;
-  border-right: 1px solid $dark-blue;
-  color: $dark-blue;
 }
 
 .fa-search {

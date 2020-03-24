@@ -1,7 +1,7 @@
 <div id="js-scroll-navbar" class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <div id="js-navbar-brand" class="navbar-brand flex-grow-1">
     <%= link_to root_path do %>
-      <%= image_tag "/assets/images/logo.png" %>
+      <%= image_tag "wood.png" %>
     <% end %>
   </div>
 
@@ -27,13 +27,9 @@
     <% end %>
   </div>
   <div>
-    <ul class="navbar-nav mr-auto">
-      <li class="navbar-btn">
-        <%= link_to "Atelier", about_path, class: "nav-link" %>
-      </li>
-      <li class="navbar-btn">
-        <%= link_to "Contact", contact_path, class: "nav-link" %>
-      </li>
+    <ul class="navbar-nav pr-10">
+      <a class="btn-add-sesh">Atelier</a>
+      <button data-toggle="modal" data-target="#sport-session-creation-modal" class="btn-add-sesh">Nous contacter</button>
     </ul>
   </div>
 </div>
