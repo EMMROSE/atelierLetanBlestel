@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
 puts 'Destroy all Works'
 Work.destroy_all
 puts 'Destroy all users'
@@ -21,8 +23,19 @@ puts '----------------'
 
 puts 'Create Works'
 @work1 = Work.new(title: 'verrière pour cuisine', category:'verrière')
-@work1.cover.attach(io: File.open('../app/assets/images'), filename: 'verriere.jpg', content_type: 'image/jpg')
+file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+@work1.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
 @work1.save!
+
+@work2 = Work.new(title: 'Charpente de ferme', category:'charpente')
+file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+@work2.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
+@work2.save!
+
+@work3 = Work.new(title: 'Vitrine de restaurant', category:'vitrine')
+file = URI.open('https://res.cloudinary.com/emmrose/image/upload/v1582638267/verriere.jpg')
+@work3.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
+@work3.save!
 puts '>>>>>> Done!'
 puts "#{Work.count} Works created!"
 puts '----------------'
