@@ -5,3 +5,17 @@
   color: white;
   font-weight: bold;
 }
+
+.btn-flat {
+  color: white;
+  padding: 7px 24px;
+  border-radius: 4px;
+  background: $blue;
+  transition: background 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.btn-flat:hover {
+  background: $dark-blue;
+  color: white;
+}

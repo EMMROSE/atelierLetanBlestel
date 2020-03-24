@@ -5,7 +5,7 @@ const type = document.querySelector('.banner-typed-text');
   const loadDynamicBannerText = () => {
   if (type) {
       new Typed( type, {
-        strings: ["Asterix", "Lanfeust", "Black Sad", "Gaston Lagaffe", "Akira", "Largo Winch"],
+        strings: ["Verrière", "Charpente", "Agencement", "Veranda"],
         typeSpeed: 100,
         attr: 'placeholder',
         bindInputFocusEvents: true,
@@ -13,7 +13,5 @@ const type = document.querySelector('.banner-typed-text');
       });
     }
   }
-
-
 
 export { loadDynamicBannerText };
