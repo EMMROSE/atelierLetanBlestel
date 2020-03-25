@@ -4,6 +4,7 @@
 @import "banner";
 @import "button";
 @import "card";
+@import "card-category";
 @import "footer";
 @import "navbar";
 
@@ -11,7 +12,6 @@
   position: relative;
   min-height: 100vh;
 }
-
 
 #foot_position {
   position: absolute;

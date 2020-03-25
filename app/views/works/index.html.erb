@@ -1,10 +1,13 @@
 <div class="container">
-  <div class="cards-index mt-5">
+<!--   <div class="container card-category">
+    <%= image_tag "logolb.png" %>
+  </div> -->
+  <div class="cards mt-5">
     <% if @works %>
       <% @works.each do |work| %>
         <%= link_to work_path(work) do %>
           <div class="card-category">
-            <%= cl_image_tag work.cover, class: "cover"%>
+            <%= cl_image_tag work.cover.key, class: "cover"%>
             <div>
               <h3><%= work.title %></h3>
             </div>
