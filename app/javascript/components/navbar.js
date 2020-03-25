@@ -7,7 +7,7 @@ const scrolledNav = () => {
   const navbarBrand = document.querySelector('#js-navbar-brand');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY >= 460) {
+      if (window.scrollY >= 380) {
         navbarSearch.classList.remove('d-none');
         navbar.classList.remove('bg-transparent');
         buttons.forEach(button => {
@@ -29,7 +29,7 @@ const scrolledNav = () => {
         }
       }
 
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 220) {
         navbarSearch.classList.remove('d-none');
         bannerSearch.classList.add('d-none');
         navbarBrand.classList.remove('flex-grow-1');
