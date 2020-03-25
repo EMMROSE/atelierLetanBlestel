@@ -29,13 +29,18 @@ file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/a
 
 @work2 = Work.new(title: 'Charpente de ferme', category:'charpente')
 file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/charpente.jpg')
-@work2.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
+@work2.cover.attach(io: file, filename: 'charpente.jpg', content_type: 'image/jpg')
 @work2.save!
 
 @work3 = Work.new(title: 'Vitrine de restaurant', category:'vitrine')
 file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/vitrine.jpg')
-@work3.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
+@work3.cover.attach(io: file, filename: 'vitrine.jpg', content_type: 'image/jpg')
 @work3.save!
+
+@work4 = Work.new(title: 'Véranda de jardin', category:'véranda')
+file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/vitrine.jpg')
+@work4.cover.attach(io: file, filename: 'vitrine.jpg', content_type: 'image/jpg')
+@work4.save!
 puts '>>>>>> Done!'
 puts "#{Work.count} Works created!"
 puts '----------------'
