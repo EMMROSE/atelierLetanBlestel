@@ -22,7 +22,7 @@ puts '>>>>>> Done!'
 puts '----------------'
 
 puts 'Create Works'
-@work1 = Work.new(title: 'verrière pour cuisine', category:'verrière')
+@work1 = Work.new(title: 'Verrière pour cuisine', category:'verrière')
 file = URI.open('https://res.cloudinary.com/dwrzyhvzy/image/upload/v1585089570/atelier/verriere.jpg')
 @work1.cover.attach(io: file, filename: 'verriere.jpg', content_type: 'image/jpg')
 @work1.save!

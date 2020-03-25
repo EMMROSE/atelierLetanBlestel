@@ -10,12 +10,18 @@
 
 #page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 140vh;
 }
 
 #foot_position {
   position: absolute;
   right: 0;
-  bottom: -12vh;
+  bottom: -80px;
   left: 0;
+}
+
+.container-about {
+  margin-top: 50vh;
+  color: $blue;
+  text-align: center;
 }
