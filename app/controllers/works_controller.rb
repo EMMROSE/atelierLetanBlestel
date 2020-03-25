@@ -3,7 +3,7 @@ class WorksController < ApplicationController
   def index
     if params[:query].present?
       @works = Work.search_by_title_category(params[:query])
-    else @Works = Work.all
+    else @works = Work.all
     end
   end
 

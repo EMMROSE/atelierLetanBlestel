@@ -1,7 +1,7 @@
-<div id="js-scroll-navbar" class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
-  <div id="js-navbar-brand" class="navbar-brand flex-grow-1">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
+  <div class="navbar-brand flex-grow-1">
     <%= link_to root_path do %>
-      <%= image_tag "wood.png" %>
+      <%= image_tag "logolb.png" %>
     <% end %>
   </div>
 
@@ -10,7 +10,7 @@
   </button>
 
 
-  <div id="js-navbar-search" class="search d-none">
+  <div class="search d-none">
     <%= form_tag works_path, method: :get, novalidate: "novalidate", class: "simple_form search"  do %>
       <div class="search-form-control form-group mb-0">
         <%= text_field_tag :query,
@@ -32,4 +32,6 @@
       <button data-toggle="modal" data-target="#sport-session-creation-modal" class="btn-add-sesh">Nous contacter</button>
     </ul>
   </div>
+</div>
+<div class="margin-navbar">
 </div>
