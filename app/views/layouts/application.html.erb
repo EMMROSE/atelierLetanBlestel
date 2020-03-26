@@ -16,9 +16,10 @@
     <% if params[:action] != 'home'  %>
       <%= render 'shared/navbar'%>
     <% end %>
-    <%= render 'shared/flashes' %>
-
+    <div class="content-wrapper">
     <%= yield %>
+    </div>
+    <%= render 'shared/flashes' %>
     <%= render 'shared/footer' %>
   </body>
 </html>
