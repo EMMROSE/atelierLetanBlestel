@@ -28,6 +28,8 @@ gem 'redis', '~> 4.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+#Development - We don’t really send emails.
+gem 'letter_opener', group: :development
 
 #gem 'dotenv-rails', groups: [:development, :test] // Already install into group :development
 
