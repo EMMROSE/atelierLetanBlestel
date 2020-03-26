@@ -25,6 +25,7 @@ require("channels")
 import "bootstrap";
 import { loadDynamicBannerText } from '../components/banner';
 import { scrolledNav } from '../components/navbar';
+import { formSportSessions } from '../components/form';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
@@ -33,6 +34,6 @@ document.addEventListener('turbolinks:load', () => {
   scrolledNav(); // scroll effect of the navbar on Home Page
   //stopCarousel(); // stop boostrap carousel (for preview) to autoplay
   //initMapbox();
-
+  formSportSessions(); // change activity class when clicked on (on sport session form creation)
   loadDynamicBannerText();
 });
