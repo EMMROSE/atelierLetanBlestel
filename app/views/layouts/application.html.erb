@@ -16,6 +16,7 @@
     <% if params[:action] != 'home'  %>
       <%= render 'shared/navbar'%>
     <% end %>
+    <%= render 'shared/contact_modal' %>
     <div class="content-wrapper">
     <%= yield %>
     </div>

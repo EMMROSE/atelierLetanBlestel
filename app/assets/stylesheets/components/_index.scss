@@ -8,24 +8,6 @@
 @import "footer";
 @import "navbar";
 
-#page-container {
-  position: relative;
-  min-height: 140vh;
-}
-
-#foot_position {
-  position: absolute;
-  right: 0;
-  bottom: -80px;
-  left: 0;
-}
-
-.container-about {
-  margin-top: 50vh;
-  color: $blue;
-  text-align: center;
-}
-
 .content-wrapper {
   min-height: calc(100vh - 70px - 80px);
 }
