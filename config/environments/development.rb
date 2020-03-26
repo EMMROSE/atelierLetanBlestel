@@ -1,4 +1,5 @@
 Rails.application.configure do
+
   config.action_mailer.default_url_options = { host: "http://localhost:3000" }
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -37,7 +38,19 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
+  config.action_mailer.delivery_method = :test
+  host = 'example.com' #replace with your own url
+  config.action_mailer.default_url_options = { host: host }
 
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :user_name            => <admin_username>,
+    :password             => <admin_password>,
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
