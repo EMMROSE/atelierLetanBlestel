@@ -42,15 +42,14 @@ Rails.application.configure do
   host = 'example.com' #replace with your own url
   config.action_mailer.default_url_options = { host: host }
 
-  # SMTP settings for gmail
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 587,
-    :user_name            => GMAIL_EMAIL,
-    :password             => GMAIL_PASSWORD,
-    :authentication       => "plain",
-    :enable_starttls_auto => true
-  }
+  #letter - opener
+  Rails.application.configure do
+    # [...]
+    # Add this line next to existing config.action_mailer settings
+    config.action_mailer.delivery_method = :letter_opener
+    # [...]
+  end
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
