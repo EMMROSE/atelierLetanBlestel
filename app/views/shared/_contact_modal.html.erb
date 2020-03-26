@@ -1,7 +1,6 @@
 
-
 <!-- Modal -->
-<div class="modal fade new-sesh" id="sport-session-creation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade new-sesh" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -12,33 +11,9 @@
       </div>
       <div class="modal-body">
         <div class="container form-container">
-          <div class="form-top">
-            <%= f.input :title, label: 'Name your session', placeholder: "Maxi Sesh !" %>
-            <%= f.input :description, label: 'Add a description', as: :text, placeholder: "Once upon a sesh..." %>
-
-           <!--  <label class="select optional" for="sport_session_location">Where are you heading?</label>
-            <input type="text" name="sport_session[location]" id="sport_session[location]" value="" style="text-align: left; position: relative; vertical-align: top; width: 100%" class="search_query" placeholder="Anywhere"> -->
-
-            <fieldset class="form-group required">
-              <input type="hidden" name="sport_session[activity_id][]" value="">
-              How are you gonna have fun?
-
-              <div class="activity-choices">
-                <% Activity.all.each do |activity| %>
-                  <input class="d-none required" type="radio" value="<%= activity.id %>" name="sport_session[activity_id]" id="sport_session_activity_id_<%= activity.id %>">
-                  <label class="form-check-label-activity d-flex collection_radio_buttons activity-choice" for="sport_session_activity_id_<%= activity.id %>">
-                    <%= show_svg("#{activity.name.downcase}.svg") %>
-                    <%= activity.name %>
-                  </label>
-                <% end %>
-              </div>
-            </fieldset>
-          </div>
-          <%= f.submit "Create your outdoor session", class: 'btn btn-gom btn-submit btn-lg btn-block p-3' %>
-          <% end %>
+          <a href="" class="btn-flat">Soumettre</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
