@@ -7,9 +7,8 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
 
     if @order.save
-      mail = OrderMailer.with(order: @order).create_confirmation
-      mail.deliver_now
-      #flash[:success] = t('flash.order.success')
+      mail = OrderMailer.general_message(@order).deliver
+      flash.notice = "Thank you! we will come back to you shortly."
       redirect_to root_path
     else
       #flash.now[:error] = t('flash.order.error_html')

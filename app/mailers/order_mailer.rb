@@ -1,10 +1,6 @@
 class OrderMailer < ApplicationMailer
-  def create_confirmation
-    @order = params[:order]
-
-    mail(
-      to:       <GMAIL_ADDRESS>,
-      subject:  "You got a new order!"
-    )
+  def general_message(order)
+    @order = order
+    mail to: "roseemmanuel@hotmail.com", subject: "New Message from Atelier LB"
   end
 end
